@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "category": "World",
+    "title": "마인크래프트 월드 예시 (예: 임진왜란 탐방)",
+    "description": ".mcworld 파일을 공유할 때 사용하는 예시야.",
+    "isMain": true,
+    "link": ""
+  },
+  {
+    "id": 2,
+    "category": "App",
+    "title": "안드로이드 앱 예시 (예: 조선 장수 RPG)",
+    "description": ".apk 파일을 공유할 때 사용하는 예시야.",
+    "isMain": true,
+    "link": ""
+  },
+  {
+    "id": 3,
+    "category": "Docs",
+    "title": "문서 자료 예시 (예: 사회과 워크북)",
+    "description": ".hwp 또는 .pdf 파일을 공유할 때 사용하는 예시야.",
+    "isMain": false,
+    "link": ""
+  }
+]
