@@ -52,15 +52,15 @@ export default function Navbar() {
 
         {/* Category quick links */}
         <div className="hidden md:flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400">
-          <span className="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-slate-100 dark:hover:bg-white/10 cursor-default">
+          <Link href="/archive?cat=World" className="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-slate-100 dark:hover:bg-white/10 transition-colors">
             <Globe size={12} className="text-emerald-500" /> 월드
-          </span>
-          <span className="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-slate-100 dark:hover:bg-white/10 cursor-default">
+          </Link>
+          <Link href="/archive?cat=App" className="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-slate-100 dark:hover:bg-white/10 transition-colors">
             <Smartphone size={12} className="text-blue-500" /> 앱
-          </span>
-          <span className="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-slate-100 dark:hover:bg-white/10 cursor-default">
+          </Link>
+          <Link href="/archive?cat=Docs" className="flex items-center gap-1 px-2 py-1 rounded-md hover:bg-slate-100 dark:hover:bg-white/10 transition-colors">
             <FileText size={12} className="text-orange-500" /> 문서
-          </span>
+          </Link>
         </div>
 
         {/* Theme toggle */}
