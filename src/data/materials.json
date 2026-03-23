@@ -2,13 +2,29 @@
   {
     "id": 1,
     "category": "World",
-    "title": "마인크래프트 월드 예시 (예: 임진왜란 탐방)",
-    "description": ".mcworld 파일을 공유할 때 사용하는 예시야.",
+    "title": "경제교류 월드",
+    "description": "학생들이 직접 경제교류를 하며 경제 경험을 느낄낄 수 있는 월드",
     "isMain": true,
-    "link": ""
+    "link": "https://drive.google.com/uc?export=download&id=1Y2c8Y1OxjOyb10UV8BaZRjbmklkk9-Q0"
   },
   {
     "id": 2,
+    "category": "World",
+    "title": "우리학교 월드",
+    "description": "학교의 특색을 살려 만들어보고 우리 지역의 모습도 만들어 볼 수 있는 월드",
+    "isMain": true,
+    "link": "https://drive.google.com/uc?export=download&id=1yRs3-olusy-jiUHCKNnrbYFN6uXolrxZ"
+  },
+  {
+    "id": 3,
+    "category": "World",
+    "title": "지속가능한 미래",
+    "description": "우리의 삶이 지속가능한지 되돌아보고 우리가 미래를 만들어 갈 수 있는 월드",
+    "isMain": true,
+    "link": "https://drive.google.com/uc?export=download&id=1OTiChdZad8XiQDAw9Yhcdb9CSJCwzcDK"
+  },
+  {
+    "id": 4,
     "category": "App",
     "title": "안드로이드 앱 예시 (예: 조선 장수 RPG)",
     "description": ".apk 파일을 공유할 때 사용하는 예시야.",
@@ -16,7 +32,7 @@
     "link": ""
   },
   {
-    "id": 3,
+    "id": 5,
     "category": "Docs",
     "title": "문서 자료 예시 (예: 사회과 워크북)",
     "description": ".hwp 또는 .pdf 파일을 공유할 때 사용하는 예시야.",
