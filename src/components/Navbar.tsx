@@ -34,12 +34,12 @@ export default function Navbar() {
         </Link>
 
         {/* Nav Links */}
-        <nav className="hidden sm:flex items-center gap-1">
+        <nav className="flex items-center gap-1">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${
+              className={`px-3 sm:px-4 py-1.5 rounded-lg text-sm font-medium transition-all ${
                 pathname === link.href
                   ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
                   : "text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/10"

@@ -3,7 +3,7 @@
 import { Suspense, useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Globe, Smartphone, FileText, X } from "lucide-react";
+import { Search, Globe, Smartphone, FileText, Video, X } from "lucide-react";
 import MaterialCard from "@/components/MaterialCard";
 import rawMaterials from "@/data/materials.json";
 
@@ -13,33 +13,44 @@ const categories = [
   {
     value: "All",
     label: "전체",
+    shortLabel: "전체",
     icon: null,
     active: "bg-slate-800 text-white dark:bg-white dark:text-slate-900 border-transparent",
   },
   {
     value: "World",
-    label: "월드",
+    label: "R.E.A.L.월드유니버스",
+    shortLabel: "월드",
     icon: <Globe size={13} />,
     active: "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border-emerald-500/40",
   },
   {
     value: "App",
-    label: "앱",
+    label: "R.E.A.L.추체험 역사 인터뷰",
+    shortLabel: "역사 인터뷰",
     icon: <Smartphone size={13} />,
     active: "bg-blue-500/15 text-blue-600 dark:text-blue-400 border-blue-500/40",
   },
   {
     value: "Docs",
-    label: "문서",
+    label: "R.E.A.L.워크북",
+    shortLabel: "워크북",
     icon: <FileText size={13} />,
     active: "bg-orange-500/15 text-orange-600 dark:text-orange-400 border-orange-500/40",
+  },
+  {
+    value: "Video",
+    label: "안내동영상",
+    shortLabel: "안내동영상",
+    icon: <Video size={13} />,
+    active: "bg-purple-500/15 text-purple-600 dark:text-purple-400 border-purple-500/40",
   },
 ];
 
 const columnDefs = [
   {
     cat: "World",
-    label: "월드",
+    label: "R.E.A.L.월드유니버스",
     icon: <Globe size={16} />,
     color: "text-emerald-600 dark:text-emerald-400",
     border: "border-emerald-500/30",
@@ -47,7 +58,7 @@ const columnDefs = [
   },
   {
     cat: "App",
-    label: "앱",
+    label: "R.E.A.L.추체험 역사 인터뷰",
     icon: <Smartphone size={16} />,
     color: "text-blue-600 dark:text-blue-400",
     border: "border-blue-500/30",
@@ -55,11 +66,19 @@ const columnDefs = [
   },
   {
     cat: "Docs",
-    label: "문서",
+    label: "R.E.A.L.워크북",
     icon: <FileText size={16} />,
     color: "text-orange-600 dark:text-orange-400",
     border: "border-orange-500/30",
     bg: "bg-orange-500/10",
+  },
+  {
+    cat: "Video",
+    label: "안내동영상",
+    icon: <Video size={16} />,
+    color: "text-purple-600 dark:text-purple-400",
+    border: "border-purple-500/30",
+    bg: "bg-purple-500/10",
   },
 ];
 
@@ -181,7 +200,8 @@ function ArchiveContent() {
               }`}
             >
               {cat.icon}
-              {cat.label}
+              <span className="sm:hidden">{cat.shortLabel}</span>
+              <span className="hidden sm:inline">{cat.label}</span>
             </button>
           ))}
         </div>
@@ -245,7 +265,7 @@ function ArchiveContent() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="grid grid-cols-3 gap-6"
+              className="grid grid-cols-2 xl:grid-cols-4 gap-6"
             >
               {desktopColumns.map((col) => (
                 <div key={col.cat}>

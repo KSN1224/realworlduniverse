@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, Smartphone, FileText, Download, Clock } from "lucide-react";
+import { Globe, Smartphone, FileText, Download, Clock, Video } from "lucide-react";
 
 type Material = {
   id: number;
@@ -14,7 +14,7 @@ type Material = {
 
 const categoryConfig: Record<
   string,
-  { icon: React.ReactNode; color: string; bg: string; border: string; label: string }
+  { icon: React.ReactNode; color: string; bg: string; border: string; label: string; name: string }
 > = {
   World: {
     icon: <Globe size={20} />,
@@ -22,6 +22,7 @@ const categoryConfig: Record<
     bg: "bg-emerald-500/10",
     border: "border-emerald-500/20",
     label: "월드 파일 (.mcworld)",
+    name: "R.E.A.L.월드유니버스",
   },
   App: {
     icon: <Smartphone size={20} />,
@@ -29,6 +30,7 @@ const categoryConfig: Record<
     bg: "bg-blue-500/10",
     border: "border-blue-500/20",
     label: "안드로이드 앱 (.apk)",
+    name: "R.E.A.L.추체험 역사 인터뷰",
   },
   Docs: {
     icon: <FileText size={20} />,
@@ -36,6 +38,15 @@ const categoryConfig: Record<
     bg: "bg-orange-500/10",
     border: "border-orange-500/20",
     label: "문서 자료 (.hwp / .pdf)",
+    name: "R.E.A.L.워크북",
+  },
+  Video: {
+    icon: <Video size={20} />,
+    color: "text-purple-600 dark:text-purple-400",
+    bg: "bg-purple-500/10",
+    border: "border-purple-500/20",
+    label: "안내 동영상",
+    name: "안내동영상",
   },
 };
 
@@ -65,7 +76,7 @@ export default function MaterialCard({
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-0.5">
             <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${cfg.bg} ${cfg.color}`}>
-              {material.category}
+              {cfg.name}
             </span>
           </div>
           <p className="font-semibold text-slate-800 dark:text-white text-sm truncate">{material.title}</p>
@@ -101,14 +112,9 @@ export default function MaterialCard({
       whileHover={{ scale: 1.03, y: -4 }}
       className={`glass-card rounded-2xl p-6 border ${cfg.border} hover:shadow-2xl transition-all duration-300 flex flex-col gap-4`}
     >
-      {/* Icon + Category */}
-      <div className="flex items-start justify-between">
-        <div className={`w-12 h-12 rounded-xl ${cfg.bg} flex items-center justify-center ${cfg.color}`}>
-          {cfg.icon}
-        </div>
-        <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${cfg.bg} ${cfg.color}`}>
-          {material.category}
-        </span>
+      {/* Icon */}
+      <div className={`w-12 h-12 rounded-xl ${cfg.bg} flex items-center justify-center ${cfg.color}`}>
+        {cfg.icon}
       </div>
 
       {/* Text */}

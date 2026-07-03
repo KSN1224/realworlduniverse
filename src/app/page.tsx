@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BookOpen, ArrowRight, Globe, Smartphone, FileText } from "lucide-react";
+import { BookOpen, ArrowRight, Globe, Smartphone, FileText, Video } from "lucide-react";
 import Link from "next/link";
 import MaterialCard from "@/components/MaterialCard";
 import rawMaterials from "@/data/materials.json";
@@ -13,6 +13,7 @@ const filterDefs = [
   {
     value: "All",
     label: "전체",
+    shortLabel: "전체",
     icon: null,
     color: "text-slate-600 dark:text-slate-300",
     activeClass:
@@ -20,7 +21,8 @@ const filterDefs = [
   },
   {
     value: "World",
-    label: "월드",
+    label: "R.E.A.L.월드유니버스",
+    shortLabel: "월드",
     icon: <Globe size={14} />,
     color: "text-emerald-600 dark:text-emerald-400",
     activeClass:
@@ -28,7 +30,8 @@ const filterDefs = [
   },
   {
     value: "App",
-    label: "앱",
+    label: "R.E.A.L.추체험 역사 인터뷰",
+    shortLabel: "역사 인터뷰",
     icon: <Smartphone size={14} />,
     color: "text-blue-600 dark:text-blue-400",
     activeClass:
@@ -36,18 +39,28 @@ const filterDefs = [
   },
   {
     value: "Docs",
-    label: "문서",
+    label: "R.E.A.L.워크북",
+    shortLabel: "워크북",
     icon: <FileText size={14} />,
     color: "text-orange-600 dark:text-orange-400",
     activeClass:
       "bg-orange-500/15 text-orange-700 dark:text-orange-400 border-orange-500/40",
+  },
+  {
+    value: "Video",
+    label: "안내동영상",
+    shortLabel: "안내동영상",
+    icon: <Video size={14} />,
+    color: "text-purple-600 dark:text-purple-400",
+    activeClass:
+      "bg-purple-500/15 text-purple-700 dark:text-purple-400 border-purple-500/40",
   },
 ];
 
 const columnDefs = [
   {
     cat: "World",
-    label: "월드",
+    label: "R.E.A.L.월드유니버스",
     icon: <Globe size={16} />,
     color: "text-emerald-600 dark:text-emerald-400",
     border: "border-emerald-500/30",
@@ -55,7 +68,7 @@ const columnDefs = [
   },
   {
     cat: "App",
-    label: "앱",
+    label: "R.E.A.L.추체험 역사 인터뷰",
     icon: <Smartphone size={16} />,
     color: "text-blue-600 dark:text-blue-400",
     border: "border-blue-500/30",
@@ -63,11 +76,19 @@ const columnDefs = [
   },
   {
     cat: "Docs",
-    label: "문서",
+    label: "R.E.A.L.워크북",
     icon: <FileText size={16} />,
     color: "text-orange-600 dark:text-orange-400",
     border: "border-orange-500/30",
     bg: "bg-orange-500/10",
+  },
+  {
+    cat: "Video",
+    label: "안내동영상",
+    icon: <Video size={16} />,
+    color: "text-purple-600 dark:text-purple-400",
+    border: "border-purple-500/30",
+    bg: "bg-purple-500/10",
   },
 ];
 
@@ -102,9 +123,10 @@ export default function HomePage() {
   }, [activeCategory]);
 
   const stats = [
-    { label: "월드", count: materials.filter((m) => m.category === "World").length, color: "text-emerald-500" },
-    { label: "앱", count: materials.filter((m) => m.category === "App").length, color: "text-blue-500" },
-    { label: "문서", count: materials.filter((m) => m.category === "Docs").length, color: "text-orange-500" },
+    { label: "월드유니버스", count: materials.filter((m) => m.category === "World").length, color: "text-emerald-500" },
+    { label: "역사 인터뷰", count: materials.filter((m) => m.category === "App").length, color: "text-blue-500" },
+    { label: "워크북", count: materials.filter((m) => m.category === "Docs").length, color: "text-orange-500" },
+    { label: "안내동영상", count: materials.filter((m) => m.category === "Video").length, color: "text-purple-500" },
   ];
 
   return (
@@ -159,14 +181,15 @@ export default function HomePage() {
           <button
             key={f.value}
             onClick={() => handleFilter(f.value)}
-            className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium border transition-all duration-200 ${
+            className={`flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-xl text-sm font-medium border transition-all duration-200 ${
               activeCategory === f.value
                 ? f.activeClass
                 : "glass-card border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600"
             }`}
           >
             {f.icon}
-            {f.label}
+            <span className="sm:hidden">{f.shortLabel}</span>
+            <span className="hidden sm:inline">{f.label}</span>
           </button>
         ))}
       </motion.div>
@@ -209,7 +232,7 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="grid grid-cols-3 gap-6"
+              className="grid grid-cols-2 xl:grid-cols-4 gap-6"
             >
               {desktopColumns.map((col) => (
                 <div key={col.cat}>

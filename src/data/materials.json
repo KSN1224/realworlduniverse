@@ -1,42 +1,394 @@
 [
   {
-    "id": 1,
-    "category": "World",
-    "title": "경제교류 월드",
-    "description": "학생들이 직접 경제교류를 하며 경제 경험을 느낄낄 수 있는 월드",
-    "isMain": true,
-    "link": "https://drive.google.com/uc?export=download&id=1Y2c8Y1OxjOyb10UV8BaZRjbmklkk9-Q0"
-  },
-  {
-    "id": 2,
-    "category": "World",
-    "title": "우리학교 월드",
-    "description": "학교의 특색을 살려 만들어보고 우리 지역의 모습도 만들어 볼 수 있는 월드",
-    "isMain": true,
-    "link": "https://drive.google.com/uc?export=download&id=1yRs3-olusy-jiUHCKNnrbYFN6uXolrxZ"
-  },
-  {
-    "id": 3,
-    "category": "World",
-    "title": "지속가능한 미래",
-    "description": "우리의 삶이 지속가능한지 되돌아보고 우리가 미래를 만들어 갈 수 있는 월드",
-    "isMain": true,
-    "link": "https://drive.google.com/uc?export=download&id=1OTiChdZad8XiQDAw9Yhcdb9CSJCwzcDK"
-  },
-  {
     "id": 4,
-    "category": "App",
-    "title": "안드로이드 앱 예시 (예: 조선 장수 RPG)",
-    "description": ".apk 파일을 공유할 때 사용하는 예시야.",
-    "isMain": true,
-    "link": ""
+    "category": "World",
+    "title": "1. 무역의 이유",
+    "description": "마인크래프트 월드에서 나라 간 무역이 이루어지는 이유를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=11FFxgz4JbC6d5czs1I-NMDqUCzbQpcGG"
   },
   {
     "id": 5,
-    "category": "Docs",
-    "title": "문서 자료 예시 (예: 사회과 워크북)",
-    "description": ".hwp 또는 .pdf 파일을 공유할 때 사용하는 예시야.",
+    "category": "World",
+    "title": "2. 무역의 의미",
+    "description": "마인크래프트 월드에서 무역의 의미와 중요성을 체험하는 학습 자료입니다.",
     "isMain": false,
-    "link": ""
+    "link": "https://drive.google.com/uc?export=download&id=1JeRCraznBcAzejofmeJ3qDePfW7yLfM3"
+  },
+  {
+    "id": 6,
+    "category": "World",
+    "title": "3. 독도백지도",
+    "description": "마인크래프트 월드에서 독도의 위치와 형태를 백지도로 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1VJjpXltHU4NOoDkcFyZPp_YNFHKSnAWh"
+  },
+  {
+    "id": 7,
+    "category": "World",
+    "title": "4. 독도의 지리적 특성",
+    "description": "마인크래프트 월드에서 독도의 지리적 특성과 우리 영토임을 이해하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1AJotnFNRAW2dbkJ6ePsoTauerZEY_K9g"
+  },
+  {
+    "id": 8,
+    "category": "World",
+    "title": "5. 우리나라 백지도",
+    "description": "마인크래프트 월드에서 우리나라 백지도를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1h-Zad1RVFGMMpklIr6gEVCpuJw5O01IB"
+  },
+  {
+    "id": 9,
+    "category": "World",
+    "title": "6. 우리나라 지형도",
+    "description": "마인크래프트 월드에서 우리나라 지형의 특징을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1UNymjMDFFylSBlZ3XFGQLEGvgWoHNp73"
+  },
+  {
+    "id": 10,
+    "category": "World",
+    "title": "7. 세계 대륙과 대양",
+    "description": "마인크래프트 월드에서 세계 대륙과 대양의 위치를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1hlUHXt9z_HztAtrQVLnKO1AOafUdl85j"
+  },
+  {
+    "id": 11,
+    "category": "World",
+    "title": "8. 세계의 기후",
+    "description": "마인크래프트 월드에서 세계 각 지역의 기후 특성을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1NiKugIJWaLjjFSkUQPUXIDx3m79SigqV"
+  },
+  {
+    "id": 12,
+    "category": "World",
+    "title": "9. 공간자료와 도구(학교)",
+    "description": "마인크래프트 월드에서 공간 자료와 지리 도구 활용을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1klG2-RrutuGuEhtP-soXVEHs0DzyGDst"
+  },
+  {
+    "id": 13,
+    "category": "World",
+    "title": "10. 기후변화(북극)",
+    "description": "마인크래프트 월드에서 북극 기후변화 문제를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1lT2sLZobVPqmqbhNruqkyvwIPrvusw_r"
+  },
+  {
+    "id": 14,
+    "category": "World",
+    "title": "고대 사람들의 생각과 생활",
+    "description": "마인크래프트 월드에서 고대 사람들의 생활 방식과 사고를 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1X3BQWGYKd5-1Gv86taccoQPqXgdZ6Wgo"
+  },
+  {
+    "id": 15,
+    "category": "World",
+    "title": "고려시대 모습과 사람들의 생활",
+    "description": "마인크래프트 월드에서 고려시대의 모습과 생활 문화를 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1f5fes0qbvsCmp365wHcP4vA2clqy-KNq"
+  },
+  {
+    "id": 16,
+    "category": "World",
+    "title": "고조선 사람들의 생활",
+    "description": "마인크래프트 월드에서 고조선 시대 사람들의 생활을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1t6WRfcfKFxxfLuO8zuqGgYPimaWVwYOe"
+  },
+  {
+    "id": 17,
+    "category": "World",
+    "title": "국회",
+    "description": "마인크래프트 월드에서 국회의 역할과 입법 과정을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1V2QWMReF0oqEdAJpWfxBiaZzjqyyMVql"
+  },
+  {
+    "id": 18,
+    "category": "World",
+    "title": "균형적인 국토 발전",
+    "description": "마인크래프트 월드에서 균형 있는 국토 발전의 필요성을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1_4z3XEPouN0FWm923Zlk4oFh5Nv9Q4hg"
+  },
+  {
+    "id": 19,
+    "category": "World",
+    "title": "다양한 자연환경과 인간생활",
+    "description": "마인크래프트 월드에서 다양한 자연환경 속 인간의 생활 방식을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1k6j6D0isOZNN18zJfzWhfAgeR2819SCF"
+  },
+  {
+    "id": 20,
+    "category": "World",
+    "title": "독도의 지형도",
+    "description": "마인크래프트 월드에서 독도의 지형을 상세히 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1LZAFTv_TYlnsQhpB-UxKRxTV7iuZAaAI"
+  },
+  {
+    "id": 21,
+    "category": "World",
+    "title": "미디어 콘텐츠의 분석",
+    "description": "마인크래프트 월드에서 미디어 콘텐츠를 비판적으로 분석하는 방법을 배우는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1_zb3N-OYtj7R0CIYTevnygApvNRIEjC7"
+  },
+  {
+    "id": 22,
+    "category": "World",
+    "title": "미디어의 역할",
+    "description": "마인크래프트 월드에서 미디어의 사회적 역할과 영향을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1kII7S67tZMfRNPZVG32F10rBplNZ-P7B"
+  },
+  {
+    "id": 23,
+    "category": "World",
+    "title": "민주화와 산업화로 달라진 생활 문화",
+    "description": "마인크래프트 월드에서 민주화와 산업화가 생활 문화에 미친 변화를 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1Uk3J_0WrjHVZqh6CC23ZeE952uwlWJ3F"
+  },
+  {
+    "id": 24,
+    "category": "World",
+    "title": "법원",
+    "description": "마인크래프트 월드에서 법원의 역할과 사법 과정을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1DUK7Q7eEeGPkZ870g3wOWkJtENNt9u_h"
+  },
+  {
+    "id": 25,
+    "category": "World",
+    "title": "법의 의미와 역할",
+    "description": "마인크래프트 월드에서 법의 의미와 사회에서의 역할을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=10WNhXF7ksx3hTEo3BNYT6nR9pNPDy2WG"
+  },
+  {
+    "id": 26,
+    "category": "World",
+    "title": "법의 적용사례",
+    "description": "마인크래프트 월드에서 실제 법 적용 사례를 통해 법의 기능을 이해하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1rAW1SAa0OsnrmULv2ADRrdxmMTBL-PkM"
+  },
+  {
+    "id": 27,
+    "category": "World",
+    "title": "분단과 평화의 장소",
+    "description": "마인크래프트 월드에서 남북 분단과 평화 관련 장소를 탐방하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1y8GxX6Udu3567_77GoRWlinN4EDOytxo"
+  },
+  {
+    "id": 28,
+    "category": "World",
+    "title": "삼권분립",
+    "description": "마인크래프트 월드에서 입법·사법·행정 삼권분립의 원리를 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1VUWOP4UNMvb47X5UxMZM6maB0Hbabma-"
+  },
+  {
+    "id": 29,
+    "category": "World",
+    "title": "선거의 의미와 역할 미로",
+    "description": "마인크래프트 미로 월드에서 선거의 의미와 민주주의에서의 역할을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1rre7kDXe3mpK2ensrKGe_fULLka4xFpe"
+  },
+  {
+    "id": 30,
+    "category": "World",
+    "title": "선사시대 사람들의 생활",
+    "description": "마인크래프트 월드에서 선사시대 사람들의 생활과 도구를 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=159eJUHoHxQMSWTZ4IuM2aSnHDkGd1681"
+  },
+  {
+    "id": 31,
+    "category": "World",
+    "title": "세계 여러 국가의 위치와 영토",
+    "description": "마인크래프트 월드에서 세계 여러 나라의 위치와 영토를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1Krl915N6DLfZJP-faTREiVFsGPAOZfCi"
+  },
+  {
+    "id": 32,
+    "category": "World",
+    "title": "세계 지도와 지구본",
+    "description": "마인크래프트 월드에서 세계 지도와 지구본 읽는 법을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1Dte14g6qz5xUElUrSxb5Yi4OQZ_Snl3F"
+  },
+  {
+    "id": 33,
+    "category": "World",
+    "title": "세계의 인구 분포와 특징",
+    "description": "마인크래프트 월드에서 세계 인구 분포의 특징과 원인을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1PuyO55RviaKZaI8EbNDH6Fvv-yj12f5Y"
+  },
+  {
+    "id": 34,
+    "category": "World",
+    "title": "세계의 지형",
+    "description": "마인크래프트 월드에서 세계 주요 지형(산맥, 평야, 하천 등)을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1cDvM_VljWGheh36PdB4mefXbrsPCQl3q"
+  },
+  {
+    "id": 35,
+    "category": "World",
+    "title": "세계지도",
+    "description": "마인크래프트 월드에서 세계 지도를 탐구하며 지리 감각을 기르는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1ZR3j4k8Zjxf5LN7vabmSucHdtAEpDhc5"
+  },
+  {
+    "id": 36,
+    "category": "World",
+    "title": "우리나라의 계절별 기후",
+    "description": "마인크래프트 월드에서 우리나라의 봄·여름·가을·겨울 기후 특성을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1DQtvev6IWkDlNFhsazrXAeMArBuqh4-T"
+  },
+  {
+    "id": 37,
+    "category": "World",
+    "title": "우리나라의 위치와 영토",
+    "description": "마인크래프트 월드에서 우리나라의 지리적 위치와 영토를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1YFcIL6XfTUf2t0qlsrIwcNEjbDCNNXmk"
+  },
+  {
+    "id": 38,
+    "category": "World",
+    "title": "우리나라의 인구분포와 문제",
+    "description": "마인크래프트 월드에서 우리나라 인구 분포 현황과 관련 문제를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1l6Vo_mJl05fxt-YoK5EdShEz_LNX8e8l"
+  },
+  {
+    "id": 39,
+    "category": "World",
+    "title": "유교문화가 미친 영향",
+    "description": "마인크래프트 월드에서 조선시대 유교 문화가 생활에 미친 영향을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1nDrqFCrDAMALlK6VwDlT6jGjAdO44wYt"
+  },
+  {
+    "id": 40,
+    "category": "World",
+    "title": "인권 침해 문제의 해결",
+    "description": "마인크래프트 월드에서 인권 침해 사례와 해결 방법을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1hCZNh-HNgV0lvkvmpi5o63GhODt8YvAb"
+  },
+  {
+    "id": 41,
+    "category": "World",
+    "title": "인권의 의미",
+    "description": "마인크래프트 월드에서 인권의 의미와 중요성을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1bEtUk_s0J_PgwD7d6Kneoola7NQxXD0G"
+  },
+  {
+    "id": 42,
+    "category": "World",
+    "title": "헌법 상 인권의 내용",
+    "description": "마인크래프트 월드에서 헌법에 보장된 기본권과 인권 내용을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1NUzuq5ZyTPk2dboGBuh1WKeJlIMcCFNz"
+  },
+  {
+    "id": 43,
+    "category": "World",
+    "title": "자연재해",
+    "description": "마인크래프트 월드에서 다양한 자연재해의 원인과 대처 방법을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1Cy5k6-4NKhtn5KtJ79oh3CwBlHzO8nSd"
+  },
+  {
+    "id": 44,
+    "category": "World",
+    "title": "정부",
+    "description": "마인크래프트 월드에서 정부의 역할과 행정 과정을 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1cUPVDbJTaTjH0YYLZ-Tho804pOktOTrV"
+  },
+  {
+    "id": 45,
+    "category": "World",
+    "title": "조선후기의 변화",
+    "description": "마인크래프트 월드에서 조선 후기 사회·문화·경제적 변화를 체험하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1STN1xdx5qsqbvDPFSHEg1H2epzzIUa-o"
+  },
+  {
+    "id": 46,
+    "category": "World",
+    "title": "지구촌 평화",
+    "description": "마인크래프트 월드에서 지구촌 평화를 위한 노력과 국제 협력을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1yZZGRs_r5XnzCueytxTUdfmgLOfb85_3"
+  },
+  {
+    "id": 47,
+    "category": "World",
+    "title": "지구촌의 갈등 사례",
+    "description": "마인크래프트 월드에서 지구촌 곳곳에서 발생하는 갈등 사례를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1I7Zj3J2L2i97OXm2_pLZSF6UMMDv6Gwk"
+  },
+  {
+    "id": 48,
+    "category": "World",
+    "title": "지구촌의 문제",
+    "description": "마인크래프트 월드에서 환경, 빈곤, 분쟁 등 지구촌이 당면한 문제를 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1RaQ8ir79YTS-T0YHGEuz5y_Q95WZH9gv"
+  },
+  {
+    "id": 49,
+    "category": "World",
+    "title": "지속가능한 미래 (업데이트)",
+    "description": "마인크래프트 월드에서 지속가능한 미래를 위한 생활 방식을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1xxtW9SPWmKUk5io8KJXn5I2m9_N5Y6wl"
+  },
+  {
+    "id": 50,
+    "category": "World",
+    "title": "평화 통일을 위한 노력",
+    "description": "마인크래프트 월드에서 남북한 평화 통일을 위한 다양한 노력을 탐구하는 학습 자료입니다.",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1YNsj4y4Kf6JkVq5_KvEg5t8T8R1ZIk92"
+  },
+  {
+    "id": 52,
+    "category": "Docs",
+    "title": "REAL world 워크북",
+    "description": "마인크래프트 월드 학습 활동과 함께 활용하는 학생용 워크북입니다. (PDF)",
+    "isMain": true,
+    "link": "https://drive.google.com/uc?export=download&id=1RoXISUrFRmS4CvF6S2AXjVvjhcxjM_Ee"
+  },
+  {
+    "id": 53,
+    "category": "App",
+    "title": "REALchat 앱",
+    "description": "R.E.A.L. 추체험 학습을 위한 안드로이드 앱입니다. APK 파일을 다운로드하여 설치하세요.",
+    "isMain": true,
+    "link": "https://drive.google.com/uc?export=download&id=1RZUfj_dMqY2srq7G4VfNXrga_7gqhtyX"
   }
 ]
