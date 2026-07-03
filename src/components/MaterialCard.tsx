@@ -74,11 +74,6 @@ export default function MaterialCard({
           {cfg.icon}
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-0.5">
-            <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${cfg.bg} ${cfg.color}`}>
-              {cfg.name}
-            </span>
-          </div>
           <p className="font-semibold text-slate-800 dark:text-white text-sm truncate">{material.title}</p>
           <p className="text-xs text-slate-500 dark:text-slate-400 truncate">{material.description}</p>
         </div>
