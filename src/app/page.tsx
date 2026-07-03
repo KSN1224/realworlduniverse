@@ -105,7 +105,7 @@ export default function HomePage() {
       .filter(
         (m) => activeCategory === "All" || m.category === activeCategory
       )
-      .sort((a, b) => b.id - a.id);
+      .sort((a, b) => a.id - b.id);
   }, [activeCategory]);
 
   // 데스크톱 All: 3열 칼럼 데이터

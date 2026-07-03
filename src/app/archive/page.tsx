@@ -103,7 +103,7 @@ function ArchiveContent() {
           m.description.toLowerCase().includes(q);
         return matchCat && matchQ;
       })
-      .sort((a, b) => b.id - a.id);
+      .sort((a, b) => a.id - b.id);
   }, [query, activeCategory]);
 
   // 데스크톱 All 뷰: 카테고리별 칼럼
