@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, Smartphone, FileText, Download, Clock, Video } from "lucide-react";
+import { Globe, Smartphone, FileText, Download, Clock } from "lucide-react";
 
 type Material = {
   id: number;
@@ -39,14 +39,6 @@ const categoryConfig: Record<
     border: "border-orange-500/20",
     label: "문서 자료 (.hwp / .pdf)",
     name: "R.E.A.L.문서",
-  },
-  Video: {
-    icon: <Video size={20} />,
-    color: "text-purple-600 dark:text-purple-400",
-    bg: "bg-purple-500/10",
-    border: "border-purple-500/20",
-    label: "안내 동영상",
-    name: "안내동영상",
   },
 };
 

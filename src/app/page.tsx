@@ -2,9 +2,10 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BookOpen, ArrowRight, Globe, Smartphone, FileText, Video } from "lucide-react";
+import { BookOpen, ArrowRight, Globe, Smartphone, FileText } from "lucide-react";
 import Link from "next/link";
 import MaterialCard from "@/components/MaterialCard";
+import VideoShowcase from "@/components/VideoShowcase";
 import rawMaterials from "@/data/materials.json";
 
 const materials = Array.isArray(rawMaterials) ? rawMaterials : [];
@@ -46,15 +47,6 @@ const filterDefs = [
     activeClass:
       "bg-orange-500/15 text-orange-700 dark:text-orange-400 border-orange-500/40",
   },
-  {
-    value: "Video",
-    label: "안내동영상",
-    shortLabel: "안내동영상",
-    icon: <Video size={14} />,
-    color: "text-purple-600 dark:text-purple-400",
-    activeClass:
-      "bg-purple-500/15 text-purple-700 dark:text-purple-400 border-purple-500/40",
-  },
 ];
 
 const columnDefs = [
@@ -81,14 +73,6 @@ const columnDefs = [
     color: "text-orange-600 dark:text-orange-400",
     border: "border-orange-500/30",
     bg: "bg-orange-500/10",
-  },
-  {
-    cat: "Video",
-    label: "안내동영상",
-    icon: <Video size={16} />,
-    color: "text-purple-600 dark:text-purple-400",
-    border: "border-purple-500/30",
-    bg: "bg-purple-500/10",
   },
 ];
 
@@ -126,7 +110,6 @@ export default function HomePage() {
     { label: "월드유니버스", count: materials.filter((m) => m.category === "World").length, color: "text-emerald-500" },
     { label: "역사 인터뷰", count: materials.filter((m) => m.category === "App").length, color: "text-blue-500" },
     { label: "문서", count: materials.filter((m) => m.category === "Docs").length, color: "text-orange-500" },
-    { label: "안내동영상", count: materials.filter((m) => m.category === "Video").length, color: "text-purple-500" },
   ];
 
   return (
@@ -170,6 +153,9 @@ export default function HomePage() {
         </div>
       </motion.div>
 
+      {/* 안내 동영상 쇼케이스 */}
+      <VideoShowcase />
+
       {/* 필터 버튼 */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}
@@ -188,14 +174,14 @@ export default function HomePage() {
             }`}
           >
             {f.icon}
-            <span className="sm:hidden">{f.shortLabel}</span>
-            <span className="hidden sm:inline">{f.label}</span>
+            <span className="xl:hidden">{f.shortLabel}</span>
+            <span className="hidden xl:inline">{f.label}</span>
           </button>
         ))}
       </motion.div>
 
-      {/* ── 모바일 피드 (md 미만) ── */}
-      <div className="md:hidden">
+      {/* ── 모바일 피드 (sm 미만: 폰 화면에서만 표시) ── */}
+      <div className="sm:hidden">
         <div className="text-xs text-slate-400 dark:text-slate-500 mb-3">
           {mobileFeed.length}개 · {activeCategory === "All" ? "최신순" : filterDefs.find(f => f.value === activeCategory)?.label}
         </div>
@@ -221,8 +207,8 @@ export default function HomePage() {
         </AnimatePresence>
       </div>
 
-      {/* ── 데스크톱 레이아웃 (md 이상) ── */}
-      <div className="hidden md:block">
+      {/* ── 카테고리 그리드 레이아웃 (sm 이상: 태블릿부터 표시) ── */}
+      <div className="hidden sm:block">
         <AnimatePresence mode="wait">
           {activeCategory === "All" ? (
             /* 3열 카테고리 레이아웃 */
@@ -232,7 +218,7 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="grid grid-cols-2 xl:grid-cols-4 gap-6"
+              className="grid grid-cols-2 lg:grid-cols-3 gap-6"
             >
               {desktopColumns.map((col) => (
                 <div key={col.cat}>

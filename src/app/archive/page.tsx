@@ -3,7 +3,7 @@
 import { Suspense, useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Globe, Smartphone, FileText, Video, X } from "lucide-react";
+import { Search, Globe, Smartphone, FileText, X } from "lucide-react";
 import MaterialCard from "@/components/MaterialCard";
 import rawMaterials from "@/data/materials.json";
 
@@ -38,13 +38,6 @@ const categories = [
     icon: <FileText size={13} />,
     active: "bg-orange-500/15 text-orange-600 dark:text-orange-400 border-orange-500/40",
   },
-  {
-    value: "Video",
-    label: "안내동영상",
-    shortLabel: "안내동영상",
-    icon: <Video size={13} />,
-    active: "bg-purple-500/15 text-purple-600 dark:text-purple-400 border-purple-500/40",
-  },
 ];
 
 const columnDefs = [
@@ -71,14 +64,6 @@ const columnDefs = [
     color: "text-orange-600 dark:text-orange-400",
     border: "border-orange-500/30",
     bg: "bg-orange-500/10",
-  },
-  {
-    cat: "Video",
-    label: "안내동영상",
-    icon: <Video size={16} />,
-    color: "text-purple-600 dark:text-purple-400",
-    border: "border-purple-500/30",
-    bg: "bg-purple-500/10",
   },
 ];
 
@@ -162,7 +147,7 @@ function ArchiveContent() {
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1, duration: 0.45 }}
-        className="flex flex-col sm:flex-row gap-3 mb-8"
+        className="flex flex-col lg:flex-row gap-3 mb-8"
       >
         {/* 검색창 */}
         <div className="relative flex-1">
@@ -200,15 +185,15 @@ function ArchiveContent() {
               }`}
             >
               {cat.icon}
-              <span className="sm:hidden">{cat.shortLabel}</span>
-              <span className="hidden sm:inline">{cat.label}</span>
+              <span className="xl:hidden">{cat.shortLabel}</span>
+              <span className="hidden xl:inline">{cat.label}</span>
             </button>
           ))}
         </div>
       </motion.div>
 
-      {/* ── 모바일 피드 (md 미만에서만 표시) ── */}
-      <div className="md:hidden">
+      {/* ── 모바일 피드 (sm 미만: 폰 화면에서만 표시) ── */}
+      <div className="sm:hidden">
         <div className="text-sm text-slate-400 dark:text-slate-500 mb-4">
           {mobileFeed.length}개의 자료
           {activeCategory === "All" && " · 최신순"}
@@ -254,8 +239,8 @@ function ArchiveContent() {
         </AnimatePresence>
       </div>
 
-      {/* ── 데스크톱 레이아웃 (md 이상에서만 표시) ── */}
-      <div className="hidden md:block">
+      {/* ── 카테고리 그리드 레이아웃 (sm 이상: 태블릿부터 표시) ── */}
+      <div className="hidden sm:block">
         <AnimatePresence mode="wait">
           {activeCategory === "All" ? (
             /* 3열 카테고리 레이아웃 */
@@ -265,7 +250,7 @@ function ArchiveContent() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="grid grid-cols-2 xl:grid-cols-4 gap-6"
+              className="grid grid-cols-2 lg:grid-cols-3 gap-6"
             >
               {desktopColumns.map((col) => (
                 <div key={col.cat}>
