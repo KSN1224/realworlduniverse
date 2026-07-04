@@ -39,8 +39,8 @@ const filterDefs = [
   },
   {
     value: "Docs",
-    label: "R.E.A.L.워크북",
-    shortLabel: "워크북",
+    label: "R.E.A.L.문서",
+    shortLabel: "문서",
     icon: <FileText size={14} />,
     color: "text-orange-600 dark:text-orange-400",
     activeClass:
@@ -76,7 +76,7 @@ const columnDefs = [
   },
   {
     cat: "Docs",
-    label: "R.E.A.L.워크북",
+    label: "R.E.A.L.문서",
     icon: <FileText size={16} />,
     color: "text-orange-600 dark:text-orange-400",
     border: "border-orange-500/30",
@@ -125,7 +125,7 @@ export default function HomePage() {
   const stats = [
     { label: "월드유니버스", count: materials.filter((m) => m.category === "World").length, color: "text-emerald-500" },
     { label: "역사 인터뷰", count: materials.filter((m) => m.category === "App").length, color: "text-blue-500" },
-    { label: "워크북", count: materials.filter((m) => m.category === "Docs").length, color: "text-orange-500" },
+    { label: "문서", count: materials.filter((m) => m.category === "Docs").length, color: "text-orange-500" },
     { label: "안내동영상", count: materials.filter((m) => m.category === "Video").length, color: "text-purple-500" },
   ];
 

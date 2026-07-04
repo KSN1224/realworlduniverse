@@ -33,8 +33,8 @@ const categories = [
   },
   {
     value: "Docs",
-    label: "R.E.A.L.워크북",
-    shortLabel: "워크북",
+    label: "R.E.A.L.문서",
+    shortLabel: "문서",
     icon: <FileText size={13} />,
     active: "bg-orange-500/15 text-orange-600 dark:text-orange-400 border-orange-500/40",
   },
@@ -66,7 +66,7 @@ const columnDefs = [
   },
   {
     cat: "Docs",
-    label: "R.E.A.L.워크북",
+    label: "R.E.A.L.문서",
     icon: <FileText size={16} />,
     color: "text-orange-600 dark:text-orange-400",
     border: "border-orange-500/30",

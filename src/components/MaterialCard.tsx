@@ -38,7 +38,7 @@ const categoryConfig: Record<
     bg: "bg-orange-500/10",
     border: "border-orange-500/20",
     label: "문서 자료 (.hwp / .pdf)",
-    name: "R.E.A.L.워크북",
+    name: "R.E.A.L.문서",
   },
   Video: {
     icon: <Video size={20} />,

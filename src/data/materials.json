@@ -390,5 +390,13 @@
     "description": "R.E.A.L. 추체험 학습을 위한 안드로이드 앱입니다. APK 파일을 다운로드하여 설치하세요.",
     "isMain": true,
     "link": "https://drive.google.com/uc?export=download&id=1RZUfj_dMqY2srq7G4VfNXrga_7gqhtyX"
+  },
+  {
+    "id": 54,
+    "category": "Docs",
+    "title": "REAL월드 학습지도안",
+    "description": "마인크래프트 월드 학습 활동을 위한 교사용 학습지도안입니다. (HWP)",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1CxmmfNZYGvFUN1UXuqdU7DVwJtGAUUvQ"
   }
 ]
