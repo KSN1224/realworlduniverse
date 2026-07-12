@@ -376,6 +376,14 @@
     "link": "https://drive.google.com/uc?export=download&id=1YNsj4y4Kf6JkVq5_KvEg5t8T8R1ZIk92"
   },
   {
+    "id": 51,
+    "category": "Docs",
+    "title": "REAL추체험역사인터뷰 워크북",
+    "description": "R.E.A.L. 추체험 역사인터뷰 학습 활동과 함께 활용하는 학생용 워크북입니다. (HWP)",
+    "isMain": false,
+    "link": "https://drive.google.com/uc?export=download&id=1QKm0CdlVBKewxW_3rMSi6GRs2znv_A0Z"
+  },
+  {
     "id": 52,
     "category": "Docs",
     "title": "REAL world 워크북",
@@ -389,7 +397,7 @@
     "title": "R.E.A.L.추체험역사인터뷰",
     "description": "R.E.A.L. 추체험 학습을 위한 안드로이드 앱입니다. APK 파일을 다운로드하여 설치하세요.",
     "isMain": true,
-    "link": "https://drive.google.com/uc?export=download&id=1JstrWCOl6auatcqAFDwzl7cA0FwZhMmx"
+    "link": "https://drive.google.com/uc?export=download&id=1we_a3hOGB-xibTtuWb4_l4uR7Bx8aCq_"
   },
   {
     "id": 54,
@@ -398,13 +406,5 @@
     "description": "마인크래프트 월드 학습 활동을 위한 교사용 학습지도안입니다. (HWP)",
     "isMain": false,
     "link": "https://drive.google.com/uc?export=download&id=1CxmmfNZYGvFUN1UXuqdU7DVwJtGAUUvQ"
-  },
-  {
-    "id": 55,
-    "category": "Docs",
-    "title": "REAL추체험역사인터뷰 워크북",
-    "description": "R.E.A.L. 추체험 역사인터뷰 학습 활동과 함께 활용하는 학생용 워크북입니다. (HWP)",
-    "isMain": false,
-    "link": "https://drive.google.com/uc?export=download&id=1QKm0CdlVBKewxW_3rMSi6GRs2znv_A0Z"
   }
 ]
