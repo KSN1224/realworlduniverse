@@ -68,8 +68,9 @@ export default function CurriculumCard({
             }`}
           />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center text-slate-300 dark:text-slate-600">
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-1.5 text-slate-300 dark:text-slate-600">
             <ImageOff size={28} />
+            <span className="text-xs font-semibold">사진 없음</span>
           </div>
         )}
         <span className="absolute top-2 left-2 w-7 h-7 rounded-lg bg-black/60 text-white text-xs font-bold flex items-center justify-center backdrop-blur-sm">
