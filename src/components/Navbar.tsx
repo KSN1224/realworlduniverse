@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 const navLinks = [
   { href: "/", label: "홈" },
+  { href: "/curriculum", label: "교육과정 연계" },
   { href: "/archive", label: "전체 자료실" },
 ];
 
