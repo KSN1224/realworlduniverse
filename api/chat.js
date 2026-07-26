@@ -4,7 +4,7 @@
 //
 // 필수 환경 변수: CHAT_API_KEY (Gemini API 키, Vercel 프로젝트 설정에서 등록)
 
-const DEFAULT_MODEL = "gemini-2.5-flash";
+const DEFAULT_MODEL = "gemini-flash-lite-latest";
 
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
