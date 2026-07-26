@@ -18,7 +18,9 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  const { message, history, model } = req.body || {};
+  const { message, history, model, persona } = req.body || {};
+  console.log("Received persona:", persona);
+
   if (typeof message !== "string" || !message.trim()) {
     res.status(400).json({ error: "'message' (string) is required" });
     return;
@@ -37,6 +39,11 @@ module.exports = async function handler(req, res) {
   const modelId = typeof model === "string" && model.trim() ? model : DEFAULT_MODEL;
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelId}:generateContent`;
 
+  const requestBody = { contents };
+  if (typeof persona === "string" && persona.trim()) {
+    requestBody.systemInstruction = { parts: [{ text: persona }] };
+  }
+
   try {
     const upstream = await fetch(url, {
       method: "POST",
@@ -44,7 +51,7 @@ module.exports = async function handler(req, res) {
         "Content-Type": "application/json",
         "x-goog-api-key": apiKey,
       },
-      body: JSON.stringify({ contents }),
+      body: JSON.stringify(requestBody),
     });
 
     const data = await upstream.json();
