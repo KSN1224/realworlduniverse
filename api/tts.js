@@ -28,7 +28,7 @@ module.exports = async function handler(req, res) {
       languageCode: languageCode || "ko-KR",
       ...(voiceName ? { name: voiceName } : {}),
     },
-    audioConfig: { audioEncoding: audioEncoding || "MP3" },
+    audioConfig: { audioEncoding: audioEncoding || "LINEAR16", sampleRateHertz: 24000 },
   };
 
   try {
