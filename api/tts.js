@@ -2,7 +2,7 @@
 // POST { text: string, languageCode?: string, voiceName?: string, audioEncoding?: string }
 // -> { audioContent: string(base64), audioEncoding: string }
 //
-// 필수 환경 변수: API_SECRET_KEY (Cloud Text-to-Speech API가 활성화된 Google API 키)
+// 필수 환경 변수: TTS_KEY (Cloud Text-to-Speech API가 활성화된 Google API 키)
 
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
@@ -10,9 +10,9 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  const apiKey = process.env.API_SECRET_KEY;
+  const apiKey = process.env.TTS_KEY;
   if (!apiKey) {
-    res.status(500).json({ error: "Server misconfigured: API_SECRET_KEY is not set" });
+    res.status(500).json({ error: "Server misconfigured: TTS_KEY is not set" });
     return;
   }
 

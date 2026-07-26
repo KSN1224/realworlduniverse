@@ -2,7 +2,7 @@
 // POST { audioContent: string(base64), languageCode?: string, encoding?: string, sampleRateHertz?: number }
 // -> { transcript: string }
 //
-// 필수 환경 변수: API_SECRET_KEY (Cloud Speech-to-Text API가 활성화된 Google API 키)
+// 필수 환경 변수: STT_KEY (Cloud Speech-to-Text API가 활성화된 Google API 키)
 
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
@@ -10,9 +10,9 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  const apiKey = process.env.API_SECRET_KEY;
+  const apiKey = process.env.STT_KEY;
   if (!apiKey) {
-    res.status(500).json({ error: "Server misconfigured: API_SECRET_KEY is not set" });
+    res.status(500).json({ error: "Server misconfigured: STT_KEY is not set" });
     return;
   }
 

@@ -2,7 +2,7 @@
 // POST { message: string, history?: Array<{ role: "user" | "model", text: string }>, model?: string }
 // -> { reply: string }
 //
-// 필수 환경 변수: API_SECRET_KEY (Gemini API 키, Vercel 프로젝트 설정에서 등록)
+// 필수 환경 변수: CHAT_API_KEY (Gemini API 키, Vercel 프로젝트 설정에서 등록)
 
 const DEFAULT_MODEL = "gemini-2.5-flash";
 
@@ -12,9 +12,9 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  const apiKey = process.env.API_SECRET_KEY;
+  const apiKey = process.env.CHAT_API_KEY;
   if (!apiKey) {
-    res.status(500).json({ error: "Server misconfigured: API_SECRET_KEY is not set" });
+    res.status(500).json({ error: "Server misconfigured: CHAT_API_KEY is not set" });
     return;
   }
 
