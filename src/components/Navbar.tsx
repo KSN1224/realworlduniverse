@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Globe, Smartphone, FileText, Sun, Moon, BookOpen } from "lucide-react";
+import { Globe, Smartphone, FileText, Sun, Moon, BookOpen, Sparkles } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import { motion } from "framer-motion";
 
@@ -11,6 +11,11 @@ const navLinks = [
   { href: "/curriculum", label: "교육과정 연계" },
   { href: "/archive", label: "전체 자료실" },
 ];
+
+const externalLink = {
+  href: "https://historychatko.vercel.app/",
+  label: "질문분석 플랫폼",
+};
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -49,6 +54,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <a
+            href={externalLink.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 px-3 sm:px-4 py-1.5 rounded-lg text-sm font-medium text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/10 transition-all"
+          >
+            <Sparkles size={14} className="text-emerald-500" />
+            {externalLink.label}
+          </a>
         </nav>
 
         {/* Category quick links */}
