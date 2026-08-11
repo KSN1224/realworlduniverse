@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
+import MaintenanceOverlay from "@/components/MaintenanceOverlay";
 
 export const metadata: Metadata = {
   title: "R.E.A.L. 추체험 학습 자료실",
@@ -24,6 +25,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-mesh-light bg-mesh-dark pattern-overlay text-slate-900 dark:text-white antialiased">
+        <MaintenanceOverlay />
         <ThemeProvider>
           <Navbar />
           <main>{children}</main>
